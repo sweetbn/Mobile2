@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>苏宁-rem适配</title>
+
+	<link rel="stylesheet" type="text/css" href="less/main.css">
+</head>
+<body>
+	<div class="sn-container">
+		<!-- 固定顶部 -->
+		<header>
+			<a href="javascript:;" id="type"></a>
+			<div class="search">
+				<span></span>
+				<input type="text" placeholder="卫衣 忠犬八公">
+			</div>
+			<a href="javascript:;" id='cart'></a>
+		</header>
+		<!-- 轮播图 -->
+		<div class="banner">
+			<ul class="imglist clearfix">
+				<li><a href="javascript:;"><img src="img/jd_lunbo5.jpg"></a></li>
+				<li><a href="javascript:;"><img src="img/jd_lunbo1.jpg"></a></li>
+				<li><a href="javascript:;"><img src="img/jd_lunbo2.jpg"></a></li>
+				<li><a href="javascript:;"><img src="img/jd_lunbo3.jpg"></a></li>
+				<li><a href="javascript:;"><img src="img/jd_lunbo4.jpg"></a></li>
+				<li><a href="javascript:;"><img src="img/jd_lunbo5.jpg"></a></li>
+				<li><a href="javascript:;"><img src="img/jd_lunbo1.jpg"></a></li>
+			</ul>
+
+			<ul id="dot" class="clearfix">
+				<li class="now"></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+		<!-- 商品分类 -->
+		<div class="sn-type">
+			<ul class="clearfix">
+				<li>
+					<a href="javascript:;"><img src="img/type1.png"></a>
+					<p>分类</p>
+				</li>
+				<li>
+					<a href="javascript:;"><img src="img/type2.png"></a>
+					<p>分类</p>
+				</li>
+				<li>
+					<a href="javascript:;"><img src="img/type3.png"></a>
+					<p>分类</p>
+				</li>
+				<li>
+					<a href="javascript:;"><img src="img/type4.png"></a>
+					<p>分类</p>
+				</li>
+				<li>
+					<a href="javascript:;"><img src="img/type5.png"></a>
+					<p>分类</p>
+				</li>
+				<li>
+					<a href="javascript:;"><img src="img/type6.png"></a>
+					<p>分类</p>
+				</li>
+				<li>
+					<a href="javascript:;"><img src="img/type7.png"></a>
+					<p>分类</p>
+				</li>
+				<li>
+					<a href="javascript:;"><img src="img/type8.png"></a>
+					<p>分类</p>
+				</li>
+			</ul>
+		</div>
+		<!-- 固定底部 -->
+		<footer>
+			<ul class="clearfix">
+				<li><a href="javascript:;"><img src="img/footer1.png"></a><p class="nowfooter">首页</p></li>
+				<li><a href="javascript:;"><img src="img/footer2.png"></a><p>分类</p></li>
+				<li><a href="javascript:;"><img src="img/footer3.png"></a><p>必抢清单</p></li>
+				<li><a href="javascript:;"><img src="img/footer4.png"></a><p>我的易购</p></li>
+			</ul>
+		</footer>
+	</div>
+
+<!-- zepto生产环境，基本的方法 -->
+<script type="text/javascript" src="assets/zepto/zepto.min.js"></script>
+<!-- 过滤选择器 -->
+<script type="text/javascript" src="assets/zepto/selector.js"></script>
+<!-- animate动画 -->
+<script type="text/javascript" src="assets/zepto/fx.js"></script>
+<!-- touch或者swipe触发 -->
+<script type="text/javascript" src="assets/zepto/touch.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

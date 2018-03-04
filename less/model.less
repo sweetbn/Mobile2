@@ -1,0 +1,223 @@
+@basesize:100;
+//reset css
+*,::before,::after{
+	padding:0;
+	margin: 0;
+
+	box-sizing: border-box;
+	-webkit-box-sizing:border-box; 
+}
+
+.clearfix::before,.clearfix::after{
+	content: '';
+	display: block;
+	clear: both;
+	height: 0;
+	line-height: 0;
+	visibility: hidden;
+}
+
+body{
+	font-size: 14px;
+	color: #333;
+	font-family: '微软雅黑',sans-serif;
+}
+input,textarea{
+	outline: none;
+	border:none;
+	resize:none;
+
+	/*手机端*/
+	-webkit-appearance:none;
+}
+
+a{
+	text-decoration: none;
+	color: #333;
+}
+
+//苏宁样式
+.sn-container{
+	width: 100%;
+	min-height: 300rem/@basesize;
+	min-width: 320px;
+	max-width: 640px;
+	// background-color: pink;
+	margin: 0 auto;
+	padding-bottom: 200px;
+	header{
+		position: fixed;
+		top: 0;
+		left: 0px;
+		width: 100%;
+		height: 80rem/@basesize;
+		background-color: rgb(250, 188, 9);
+		z-index: 22;
+		#type{
+			background: url('../img/sning_header1.png') no-repeat;
+			background-size: 44rem/@basesize,70rem/@basesize;
+			background-position: 0,0;
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 15rem/@basesize;
+			width: 50rem/@basesize;
+			height: 80rem/@basesize;
+		}
+		#cart{
+			background: url('../img/sning_header2.png') no-repeat;
+			background-size: 50rem/@basesize,60rem/@basesize;
+			background-position: center;
+			display: block;
+			position: absolute;
+			top: 0;
+			right: 10rem/@basesize;
+			width: 50rem/@basesize;
+			height: 80rem/@basesize;
+		}
+		.search{
+			padding-left: 70rem/@basesize;
+			padding-right: 70rem/@basesize;
+			width: 100%;
+			height: 80rem/@basesize;
+			text-align: center;
+			position: relative;
+			span{
+				position: absolute;
+				top: 20rem/@basesize;
+				left: 80rem/@basesize;
+				display: block;
+				width: 25rem/@basesize;
+				height: 25rem/@basesize;
+				background: url('../img/icon_search.png') no-repeat;
+				background-size: 25rem/@basesize 25rem/@basesize;
+				background-position: center;
+			}
+			input{
+				width: 100%;
+				height: 50rem/@basesize;
+				border-radius: 25rem/@basesize;
+				margin-top: 10rem/@basesize;
+				padding-left: 50rem/@basesize;
+				font-size: 18rem/@basesize;
+				// position: relative;
+				// &:before{
+				// 	content: '';
+				// 	position: absolute;
+				// 	top: 5rem/@basesize;
+				// 	left: 5rem/@basesize;
+				// 	display: block;
+				// 	width: 15rem/@basesize;
+				// 	height: 15rem/@basesize;
+				// 	background-color: hotpink;
+				// }
+			}
+		}
+	}
+
+	.banner{
+		width: 100%;
+		min-height: 100rem/@basesize;
+		position: relative;
+		overflow: hidden;
+		.imglist{
+			list-style: none;
+			width: 700%;
+			transform: translateX(-100/7%);
+			-webkit-transform: translateX(-100/7%);
+			li{
+				float: left;
+				width: 100/7%;
+				a{
+					display: block;
+					width: 100%;
+					img{
+						width: 100%;
+					}
+				}
+			}
+		}
+
+		#dot{
+			list-style: none;
+			width: 90rem/@basesize;
+			height: 10rem/@basesize;
+			position: absolute;
+			left: 50%;
+			margin-left: -40rem/@basesize;
+			bottom: 10rem/@basesize;
+			li{
+				width: 10rem/@basesize;
+				height: 10rem/@basesize;
+				border-radius: 50%;
+				background-color: #fff;
+				margin-left: 10rem/@basesize;
+				float: left;
+				&:first-child{
+					margin-left: 0;
+				}
+				&.now{
+					background-color: rgb(250, 188, 9);
+				}
+			}
+		}
+	}
+
+	.sn-type{
+		width: 100%;
+		text-align: center;
+		padding: 10rem/@basesize 0 10rem/@basesize 0;
+		ul{
+			list-style: none;
+			width: 100%;
+			li{
+				float: left;
+				width: 100/4%;
+				a{
+					display: block;
+					width: 100%;
+					img{
+						width: 45%;
+					}
+				}
+				p{
+					font-size: 20rem/@basesize;
+					height: 50rem/@basesize;
+				}
+			}
+		}
+	}
+
+	footer{
+		position: fixed;
+		width: 100%;
+		height: 90rem/@basesize;
+		left: 0;
+		bottom: 0;
+		background-color: #fff;
+		text-align: center;
+		ul{
+			list-style: none;
+			width: 100%;
+			li{
+				float: left;
+				width: 25%;
+				a{
+					display: block;
+					width: 100%;
+					img{
+						width: 30%;
+					}
+				}
+				p{
+					font-size: 20rem/@basesize;
+					&.nowfooter{
+						color: rgb(250, 188, 9);
+					}
+				}
+			}
+		}
+	}
+}
+
+
